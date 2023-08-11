@@ -4,19 +4,49 @@
   padding: 0;
 }
 
+section {
+  scroll-margin-top: 78px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333;
 }
 
-nav {
+.color-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.section-title {
+  text-align: center;
   text-transform: uppercase;
+}
+
+.underline {
+  height: 4px;
+  width: 60px;
+  background-color: #039dff;
+  margin: 0 auto 40px;
+}
+
+nav {
+  background-color: transparent;
+  text-transform: uppercase;
+  z-index: 5;
+  transition: background-color 0.6s;
 }
 nav .navbar-toggler {
   padding: 10px 15px;
 }
 nav .navbar-brand {
   font-weight: bold;
+}
+nav .navbar-brand:hover {
+  color: #039dff;
 }
 nav .nav-link,
 nav .navbar-nav .nav-link.show,
@@ -29,4 +59,78 @@ nav .nav-link:hover,
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show {
   color: #039dff;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-bg_640.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  z-index: 0;
+  margin-top: 0;
+}
+header.hero-img h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+}
+header.hero-img .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url("../img/hero-bg_1920.jpeg");
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -16,9 +16,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg  sticky-top">
+    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-cubes"></i>ProPrint</a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-cubes m-2"></i>Pro<span
+                    class="color-text">print</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
@@ -37,12 +38,79 @@
         </div>
     </nav>
 
-    <div style="height: 200vh;"></div>
 
+    <header class="hero-img" id="home">
+        <div class="hero-text text-center p-2">
+            <h1>Witajcie w pro<span class="color-text">print</span></h1>
+            <p>W miejscu nieskończonych możliwości</p>
+            <a href="#aboutus" class="btn btn-outline-light mt-2 text-uppercase">poznaj nas</a>
+        </div>
+        <div class="hero-shadow"></div>
+
+        <a href="#aboutus"> <i class=" fa-solid fa-chevron-down"></i></a>
+
+    </header>
+
+    <main>
+        <section id="aboutus" class="aboutus bg-light py-5">
+            <div class="container">
+                <h2 class="section-title">o nas</h2>
+                <div class="underline"></div>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-regular fa-calendar-check"></i></p>
+                        <p class="aboutus-card-title mb-1">szybka realizacja</p>
+                        <p class="aboutus-card-text">Realizujemy zlecenia w trybie expresowym!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-palette"></i></p>
+                        <p class="aboutus-card-title mb-1">projekt</p>
+                        <p class="aboutus-card-text">Stworzymy dla Ciebie upragniony model!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-ranking-star"></i></p>
+                        <p class="aboutus-card-title mb-1">najwyższy standard</p>
+                        <p class="aboutus-card-text">Gwarantujemy najwyższą jakość wykonania oraz obsługi!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-seedling"></i></p>
+                        <p class="aboutus-card-title mb-1">kochamy przyrodę!</p>
+                        <p class="aboutus-card-text">Wszystkie nasze produkty są tworzone z dbałością o środowisko!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-champagne-glasses"></i></p>
+                        <p class="aboutus-card-title mb-1">świetne relacje </p>
+                        <p class="aboutus-card-text">Zależu nam na dobrych ralacjach z naszymi klientami!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-podcast"></i></p>
+                        <p class="aboutus-card-title mb-1">podcast</p>
+                        <p class="aboutus-card-text">Sprawdź nasz podcast o tematyce druku 3D!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <div style="height: 200vh;"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
