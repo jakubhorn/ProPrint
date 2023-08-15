@@ -168,6 +168,9 @@ header.hero-img .fa-chevron-down {
 .portfolio .carousel-indicators {
   padding-bottom: 20px;
 }
+.portfolio .card {
+  margin: 0 10px;
+}
 
 @media (min-width: 768px) {
   .hero-text h1 {
