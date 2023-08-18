@@ -216,15 +216,16 @@ header.hero-img {
 		background-color: $primary-color;
 		color: $white-color;
 		border: none;
-		border-radius: 5px;
+		border-radius: 10px;
 		font-weight: bold;
 		transition: all 0.3s;
 		box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
 	}
 
 	.individual-pricing-btn:hover {
-		background-color: #027bce;
+		background-color: $primary-subdued;
 		box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+		scale: 1.05;
 	}
 }
 
