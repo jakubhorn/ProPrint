@@ -203,62 +203,28 @@ header.hero-img {
 
 /* CENY */
 .prices {
-	.pricing-table {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	text-align: center;
+
+	.section-subtitle {
+		margin-bottom: 20px;
+		font-size: 22px;
 	}
 
-	.pricing-card {
-		border: 1px solid #ddd;
-		padding: 20px;
+	.individual-pricing-btn {
+		display: inline-block;
+		padding: 15px 30px;
+		background-color: $primary-color;
+		color: $white-color;
+		border: none;
 		border-radius: 5px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		// margin: 5px;
-		transition: transform 0.3s;
-		flex: 1;
-		max-width: 250px;
-		min-width: 200px;
-		margin: 10px 20px;
-	}
-
-	.pricing-card:hover {
-		transform: scale(1.05);
-	}
-
-	.pricing-title {
-		text-align: center;
-		color: #039dff;
 		font-weight: bold;
-		margin-bottom: 20px;
+		transition: all 0.3s;
+		box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
 	}
 
-	.pricing-price {
-		text-align: center;
-		font-size: 24px;
-		color: #039dff;
-		margin-bottom: 20px;
-	}
-
-	.pricing-features {
-		list-style-type: none;
-		list-style-type: disc;
-		text-align: left;
-		width: 100%;
-		padding-left: 20px;
-	}
-
-	.pricing-features li {
-		text-align: center;
-		margin-bottom: 10px;
-	}
-
-	.pricing-note {
-		text-align: center;
-		margin-top: 40px;
-		color: #777;
-		font-style: italic;
+	.individual-pricing-btn:hover {
+		background-color: #027bce;
+		box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
 	}
 }
 
