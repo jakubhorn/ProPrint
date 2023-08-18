@@ -10,7 +10,7 @@ section {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
+  background-color: #ebecf2;
 }
 
 .color-text {
@@ -156,6 +156,7 @@ header.hero-img .fa-chevron-down {
   color: #039dff;
 }
 
+/* PORTFOLIO */
 .portfolio .carousel-item {
   height: 600px;
 }
@@ -167,6 +168,57 @@ header.hero-img .fa-chevron-down {
 }
 .portfolio .carousel-indicators {
   padding-bottom: 20px;
+}
+
+/* CENY */
+.prices .pricing-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.prices .pricing-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  flex: 1;
+  max-width: 250px;
+  min-width: 200px;
+  margin: 10px 20px;
+}
+.prices .pricing-card:hover {
+  transform: scale(1.05);
+}
+.prices .pricing-title {
+  text-align: center;
+  color: #039dff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.prices .pricing-price {
+  text-align: center;
+  font-size: 24px;
+  color: #039dff;
+  margin-bottom: 20px;
+}
+.prices .pricing-features {
+  list-style-type: none;
+  list-style-type: disc;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+.prices .pricing-features li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.prices .pricing-note {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-style: italic;
 }
 
 @media (min-width: 768px) {
