@@ -195,6 +195,56 @@ header.hero-img .fa-chevron-down {
   scale: 1.05;
 }
 
+section.team {
+  position: relative;
+  background-image: url("../img/team/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+section.team .section-title {
+  color: #ddd;
+}
+section.team .team-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+section.team .card {
+  transition: scale 0.3s;
+}
+section.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.team .card i {
+  padding: 10px;
+}
+section.team .card .card-body {
+  height: 170px;
+  text-align: center;
+}
+section.team .card:hover {
+  scale: 0.96;
+}
+section.team .card-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 320px) {
+  section.team .card img {
+    height: 200px;
+  }
+}
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
