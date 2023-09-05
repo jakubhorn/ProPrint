@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use './animations' as *;
 
 * {
 	box-sizing: border-box;
@@ -157,20 +158,22 @@ header.hero-img {
 
 	.aboutus-hero-item {
 		margin: 10px 0;
-		transition: color 0.3s;
 
 		i {
 			font-size: 36px;
+			transition: color 0.3s;
 		}
-	}
 
-	.aboutus-hero-title {
-		font-size: 24px;
-		text-transform: uppercase;
-	}
+		.aboutus-hero-title {
+			font-size: 24px;
+			text-transform: uppercase;
+			transition: color 0.3s;
+		}
 
-	.aboutus-chero-text {
-		font-size: 14px;
+		.aboutus-hero-text {
+			font-size: 14px;
+			transition: color 0.3s;
+		}
 	}
 
 	.aboutus-hero-item:hover {
